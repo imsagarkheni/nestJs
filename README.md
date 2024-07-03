@@ -64,7 +64,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Sagar Kheni](linkedin.com/in/sagar-kheni-47242a164)
+- Author - [Sagar Kheni](https://www.linkedin.com/in/sagar-kheni-47242a164/)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
