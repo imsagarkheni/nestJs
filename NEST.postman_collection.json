@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "4a19d46f-a229-481f-9e40-1d1d03eb4124",
+		"name": "NEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27516492",
+		"_collection_link": "https://engees11zateam.postman.co/workspace/11za-Collection~89bbd2b7-c5df-4483-909f-29a83c70e9c3/collection/27516492-4a19d46f-a229-481f-9e40-1d1d03eb4124?action=share&source=collection_link&creator=27516492"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"saud\",\r\n    \"email\":\"saud@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"saud241120@gmail.com\",\r\n    \"password\":\"Admin@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/users/667ab82ecec92708fc3f99ab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"users",
+								"667ab82ecec92708fc3f99ab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sagarrrrrdddddddrrrrrrr\",\r\n    \"email\": \"sagarrrrrrrrrddddddrr@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/users/667ab82ecec92708fc3f99ab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"users",
+								"667ab82ecec92708fc3f99ab"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/users/667ac25fba07c4248db5d354",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"users",
+								"667ac25fba07c4248db5d354"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Create Role",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permission",
+			"item": [
+				{
+					"name": "Get Modals",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZ2Fya2hlbmlAZ21haWwuY29tIiwic3ViIjoiNjY4MjZhMDc4ODFkYmE4ZDVjODAxYjI1IiwiaWF0IjoxNzE5OTk5NTE4LCJleHAiOjE3MjAwODU5MTh9.rBI4QQKT639VuBM7Z6ynJg3HEr4IrsFoCU7qvE2qcCM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3002/permission/getModals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"permission",
+								"getModals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Permission",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhZ2Fya2hlbmlAZ21haWwuY29tIiwic3ViIjoiNjY4MjZhMDc4ODFkYmE4ZDVjODAxYjI1IiwiaWF0IjoxNzE5OTk5NTE4LCJleHAiOjE3MjAwODU5MTh9.rBI4QQKT639VuBM7Z6ynJg3HEr4IrsFoCU7qvE2qcCM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"roleId\": \"66851c548e9da29b3d2fdda6\",\r\n  \"permissions\": [\r\n    {\r\n      \"collectionName\": \"ourteams\",\r\n      \"insertUpdate\": true,\r\n      \"delete\": false,\r\n      \"view\": true,\r\n      \"export\": false\r\n    },\r\n    {\r\n      \"collectionName\": \"roles\",\r\n      \"insertUpdate\": true,\r\n      \"delete\": true,\r\n      \"view\": true,\r\n      \"export\": true\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/permission/savePermission",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"permission",
+								"savePermission"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
